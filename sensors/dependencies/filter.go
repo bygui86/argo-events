@@ -344,7 +344,7 @@ filterExpr:
 		}
 	}
 
-	if errMessages != nil && len(errMessages) > 0 {
+	if len(errMessages) > 0 {
 		return false, errors.New(strings.Join(errMessages, " / "))
 	}
 	return false, nil
